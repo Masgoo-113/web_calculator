@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kalkulator Sederhana</h1>
+
+        <!-- Input Bilangan Pertama -->
+        <div class="input-group">
+            <label for="bil1">Bilangan Pertama:</label>
+            <input type="number" id="bil1" placeholder="Masukkan bilangan pertama">
+        </div>
+
+        <!-- Input Bilangan Kedua -->
+        <div class="input-group">
+            <label for="bil2">Bilangan Kedua:</label>
+            <input type="number" id="bil2" placeholder="Masukkan bilangan kedua">
+        </div>
+
+        <!-- Pilihan Operator -->
+        <div class="input-group">
+            <label for="operator">Pilih Operator:</label>
+            <select id="operator">
+                <option value="tambah">Penjumlahan (+)</option>
+                <option value="kurang">Pengurangan (-)</option>
+                <option value="kali">Perkalian (×)</option>
+                <option value="bagi">Pembagian (÷)</option>
+            </select>
+        </div>
+
+        <!-- Tombol Hitung -->
+        <div class="input-group">
+            <button id="hitung" onclick="hitung()">Hitung</button>
+        </div>
+
+        <!-- Hasil -->
+        <div class="input-group">
+            <label for="hasil">Hasil:</label>
+            <input type="text" id="hasil" readonly>
+        </div>
+
+        <!-- Data Diri -->
+        <div class="data-diri">
+            <p>NIM: 2203010113</p>
+            <p>Nama: FAHMI AZKA DZUN NUR'AIN</p>
+            <img src="FAHMI.jpg" width="150px">
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
